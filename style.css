@@ -1,0 +1,210 @@
+/*Global resets*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #2E2B29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Make frame the anchor for all astronaut parts */
+.frame{
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+/*Moon*/
+.moon{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 90vh;
+    background: #E9E8D2;
+    left: -100px;
+    bottom: -350px;
+    border-radius: 50%;
+}
+
+/* head */
+.head {
+    content: "";
+    background: #B8B49B;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+    border-bottom: 5px solid #2E2B29;
+    z-index: 1;
+}
+
+.head::after {
+    content: "";
+    width: 100px; 
+    height: 70px; 
+    background: #2E2B29;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 0; 
+    rotate: 181deg;
+}
+
+/*Body Styling */
+.body{
+    position: absolute;
+    background: #B8B49B;
+    width: 85px;
+    height: 90px;
+    border-radius: 20px;
+    left: 158px;
+    top: 130px;
+    bottom: -60px;
+    display: flex;
+    z-index: 0;
+}
+
+.body::before{
+     position: absolute;
+    background:#E1E0E0 ;
+    width: 35px;
+    height: 40px;
+    align-self: center;
+    left: 27px;
+    align-self: center;
+    border: 1px solid  black;
+    z-index: 2;
+    content: "";
+    border-radius: 3px ;
+}
+
+/*Astros Hands */
+.astros-hand-left{
+    position: absolute;
+    content: "";
+    background: #B8B49B;
+    width:75px;
+    height: 30px;
+    left: 120px;
+    top: 145px;
+    border-radius: 35%;
+    rotate: 140deg;
+}
+
+.astros-hand-right{
+    position: absolute;
+    content: "";
+    background: #B8B49B;
+    width:75px;
+    height: 30px;
+    right: 100px;
+    top: 154px;
+    border-radius: 35%;
+    rotate: -130deg;
+}
+
+/* Legs */
+.astros-leg {
+    position: absolute;
+    width: 25px;
+    height: 120px; 
+    background: #B8B49B;
+    border-radius: 12px;
+    top: 160px;      
+    left: 170px;
+    z-index: 3;    
+}
+
+.astros-leg::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 120px; 
+    background: #B8B49B;
+    border-radius: 12px;
+    left: 35px;
+    top: 0;
+}
+
+/*Flag styling */
+
+.flag{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #E1E0E0;
+    rotate: 260deg;
+    top: 150px;
+    bottom: 0px;
+    left: 25px;
+    right: 140px;
+}
+
+/*Flag’s green part*/
+.flag::after{
+    content: "";
+    background:#A4B89B;
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    left: 130px;  
+    top: -95px;    
+}
+
+
+.star1{
+    content: "";
+    width:5px;
+    height: 5px;
+    background: #E1E0E0;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    border-radius: 40%;
+    box-shadow: 0px 0px 5px  #fff;
+}
+
+.star2{
+    content: "";
+    width:5px;
+    height: 5px;
+    background: #E1E0E0;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    border-radius: 40%;
+    box-shadow: 0px 0px 5px  #fff;
+}
+
+.star3{
+    content: "";
+    width:5px;
+    height: 5px;
+    background: #E1E0E0;
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    border-radius: 40%;
+    box-shadow: 0px 0px 5px  #fff;
+}
+
+
+
+
+@media(max-width: 600px){
+    .frame{
+        transform: scale(0.6);
+        transform-origin: top center;
+    }
+}
