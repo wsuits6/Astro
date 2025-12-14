@@ -23,3 +23,25 @@ body {
 }
 
 
+/*Planet Ground surface*/
+
+.planet {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 50vh;
+  background: #f3f0dc;
+  border-radius: 50%;
+}
+
+
+/*Main Astrnauts Body*/
+.astronaut {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
