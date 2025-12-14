@@ -92,7 +92,7 @@ body {
     width: 70px;
     height: 30px;
     background:#d8d2b8;
-    border-radius: 10% ;
+    border-radius: 25px ;
     top:90px;
     right: 50px;
     rotate: 140deg;
@@ -106,11 +106,43 @@ body {
     width: 70px;
     height: 30px;
     background:#d8d2b8;
-    border-radius: 10% ;
+    border-radius: 20px ;
     bottom:40px;
     left: 50px;
     rotate: -140deg;   
 }
+
+/*
+==========
+LEGS
+==========
+*/
+
+/*Left Leg*/
+.leg-left{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 80px;
+    background: #d8d2b8;
+    border-radius: 25px;
+    bottom: -65px;
+    left:2px;
+}
+
+/*Right Leg*/
+.leg-right{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 80px;
+    background: #d8d2b8;
+    border-radius: 25px;
+    right:1px;
+    top:145px;
+}
+
+
 
 
 /*Creating starts spredung using radial gradients */
