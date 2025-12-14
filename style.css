@@ -15,8 +15,11 @@ body {
   align-items: flex-end;
 }
 
+/*Styling for the whole Scene */
 .scene {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
+
