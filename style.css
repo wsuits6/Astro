@@ -45,3 +45,23 @@ body {
   transform: translateX(-50%);
 }
 
+
+/*Astronauth helmet */
+.helmet {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #d8d2b8;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+/*Astronauts  Body*/
+.body {
+  width: 80px;
+  height: 90px;
+  background: #d8d2b8;
+  border-radius: 15px;
+  margin: -5px auto 0;
+  position: relative;
+}
