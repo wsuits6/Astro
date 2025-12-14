@@ -9,7 +9,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background: #2b2725;
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -60,7 +60,7 @@ body {
 .helmet::after{
     content: '';
     position: absolute;
-    background: #2b2725;
+    background: #00000bf5;
     width: 70px;
     height: 65px;
     border-radius: 50%;
@@ -78,4 +78,21 @@ body {
   margin: -5px auto 0;
   position: relative;
 }
+
+
+
+/*Creating starts spredung using radial gradients */
+.scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(white 1px, transparent 3px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 200px 200px, 300px 300px;
+  box-shadow: 0px 0px 10px #f3f0dc;
+
+  /*Add a twinkle animation*/
+}
+
 
