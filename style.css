@@ -143,6 +143,27 @@ LEGS
 }
 
 
+/* Green Flag Styles*/
+
+/* Main Flag Wrapper*/
+.flag{
+    position: absolute;
+    bottom: 180px;
+    left: 260px;
+}
+.pole {
+  width: 4px;
+  height: 100px;
+  background: #d8d2b8;
+  position: absolute;
+}
+
+.cloth {
+  width: 50px;
+  height: 30px;
+  background: #b9c7b0;
+  margin-left: 4px;
+}
 
 
 /*Creating starts spredung using radial gradients */
