@@ -79,6 +79,24 @@ body {
   position: relative;
 }
 
+/*
+================
+ Hands 
+================
+*/
+
+/*LEFT Hand*/
+.hand-left{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background:#d8d2b8;
+    border-radius: 10% ;
+    top:90px;
+    right: 50px;
+    rotate: 140deg;
+}
 
 
 /*Creating starts spredung using radial gradients */
