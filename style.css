@@ -101,21 +101,19 @@ body {
 /*Right Hand*/
 
 .hand-right{
+    content: "";
     position: absolute;
     width: 70px;
     height: 30px;
-    background: #d8d2b8;
-    border-radius: 20px;
-    bottom: 40px;
+    background:#d8d2b8;
+    border-radius: 20px ;
+    bottom:40px;
     left: 50px;
+    rotate: -140deg;   
 
-    transform: rotate(-140deg);
-    transform-origin: left center;
-
-    /* Waving animation */
-    animation: wave 1.8s ease-in-out infinite;
+    /*Waving hand animation*/
+    animation: wave 2s ;
 }
-
 
 /*
 ==========
@@ -199,21 +197,3 @@ LEGS
 }
 
 
-
-/*
-===================
-ANIMATIONS
-===================
-*/
-
-@keyframes wave {
-  0% {
-    transform: rotate(-140deg);
-  }
-  50% {
-    transform: rotate(-120deg);
-  }
-  100% {
-    transform: rotate(-140deg);
-  }
-}
