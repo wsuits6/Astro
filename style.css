@@ -144,26 +144,39 @@ LEGS
 
 
 /* Green Flag Styles*/
+/* ==================
+   FLAG
+================== */
 
-/* Main Flag Wrapper*/
-.flag{
-    position: absolute;
-    bottom: 180px;
-    left: 260px;
+.flag {
+  position: absolute;   
+  right:80px;
+  bottom: -55px;
+
+  /*Tit the main flag contianer to be relative to ain astonauth contianer */
+  transform: rotate(-200deg);
 }
-.pole {
-  width: 4px;
-  height: 100px;
-  background: #d8d2b8;
+
+/* Flag pole */
+.flag .pole {
+  width: 6px;
+  height: 160px;
+  background: #b8b8b8;
+  border-radius: 3px;
   position: absolute;
 }
 
-.cloth {
-  width: 50px;
-  height: 30px;
-  background: #b9c7b0;
-  margin-left: 4px;
-}
+/* Flag cloth */
+/* .flag .cloth {
+  position: absolute;
+  top: -10px;
+  left: 6px;
+  width: 60px;
+  height: 35px;
+  background: #7bbf6a;
+  border-radius: 4px;
+} */
+
 
 
 /*Creating starts spredung using radial gradients */
