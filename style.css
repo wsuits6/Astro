@@ -79,6 +79,49 @@ body {
   position: relative;
 }
 
+/*Astro's Badge*/
+.badge{
+  width: 30px;
+  height: 40px;
+  background: #F0F0F0;
+  z-index: 3s;
+  position: absolute;
+  bottom: 20px;
+  justify-self: center;
+}
+
+/*Controls  on Badge*/
+.dot{
+  position: absolute;
+  background: #000;
+  width: 5px;
+  height: 5px;
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+/*Control lines */
+.line {
+  position: absolute;
+  background: #000;
+  width: 25px;
+  height: 3px;
+  left: 3px;
+  bottom: 20px;
+  border-radius: 50px;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 25px;
+  height: 3px;
+  right: 0px;
+  top: 10px;
+  border-radius: 50px;
+}
 /*
 ================
  Hands 
