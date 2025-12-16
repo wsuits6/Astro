@@ -27,7 +27,7 @@ body {
 
 .planet {
   position: absolute;
-  bottom: -200px;
+  bottom: -240px;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
@@ -154,16 +154,16 @@ LEGS
 .flag {
   position: absolute;   
   right:80px;
-  bottom: -55px;
+  bottom: -65px;
 
   /*Tit the main flag contianer to be relative to ain astonauth contianer */
-  transform: rotate(-200deg);
+  transform: rotate(-198deg);
 }
 
 /* Flag pole */
 .flag .pole {
   width: 6px;
-  height: 160px;
+  height: 170px;
   background: #b8b8b8;
   border-radius: 3px;
   position: absolute;
@@ -172,7 +172,7 @@ LEGS
 /* Flag cloth */
 .flag .cloth {
   position: absolute;
-  bottom: -155px;
+  bottom: -165px;
   left: 6px;
   width: 70px;
   height: 50px;
